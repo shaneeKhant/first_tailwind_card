@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"
     integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
 </head>
 
-<body class=" bg-[#48cae4]">
+<body class=" bg-[#48cae4] font-Nunito Sans font-thin  dark:bg-slate-400">
   <div class=" flex justify-center mt-10 ">
     <div class=" max-w-md  shadow-2xl rounded-md hover:border hover:border-white">
       <figure class="imghvr-flip-diag-1 rounded-md ">
@@ -39,7 +39,7 @@
         <div class=" pt-3 pb-2 flex justify-between items-center text-[#ffffff]">
           <div class=" flex items-center gap-x-3 ">
             <img
-              class=" w-12 h-12 rounded-full object-contain object-cover shadow-lg animate__animated animate__shakeY "
+              class=" w-12 h-12 rounded-full object-contain object-cover shadow-lg anime  animate__animated animate__bounce"
               src="../image/photo-1544723795-3fb6469f5b39.jpeg" alt="">
             <div>
               <p>Juliun Sanger</p>
@@ -47,8 +47,17 @@
             </div>
           </div>
           <div>
-            <button class=" bg-slate-400 py-2 px-2.5 rounded-md hover:bg-[#ffffff] hover:text-[black] shadow-lg ">Contus
-              Us</button>
+            <button class="btn forHover">
+              <div class=" flex items-center gap-x-2">
+                <svg class="fill-[#ffffff] svg-hover w-[25px] h-[25px] animate__animated animate__swing "
+                  xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                  <path
+                    d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L239.77,35A9,9,0,0,0,236.88,26.19Zm-61.14,36L86.15,126.35l-49.6-9.73ZM96,200V152.52l24.79,21.74Zm87.53,8L100.85,135.5l119-85.29Z">
+                  </path>
+                </svg>
+                <div class="test">Contus Us</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
